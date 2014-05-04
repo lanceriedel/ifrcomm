@@ -1,0 +1,78 @@
+<!doctype html>
+<head>
+	
+    <title>jQuery searchBox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="jQuery.searchBox.css" />
+
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+
+	<h3>Google styling (modern browsers only)</h3>
+	<form id="search-4" class="search-goog">
+		<input class="query" type="text" value="Search..." />
+		<input class="search-reset" type="reset" value="" />
+		<input class="search-submit" type="submit" value="Search" />
+	</form>
+
+	
+	<a href="index.html">jQuery searchBox Documentation</a>
+
+
+    <script src="jQuery.searchBox.js"></script>
+	<script>
+
+
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            // bind 'myForm' and provide a simple callback function
+            $('#search-4').ajaxForm(function() {
+                alert("Thank you for your comment!");
+            });
+        });
+
+
+
+        //Google styling (setting custom classes)
+		$('#search-4').searchBox({
+			activeClass: 'active-goog',
+			inFocusClass: 'infocus-goog',
+			disabledButtonClass: 'disabled-goog'
+		});
+		
+
+		
+		//Destroy searchBox
+		$('#destroy').click( function(e){
+			$('#search').searchBox('die');
+			e.preventDefault();
+		});
+
+
+
+
+
+        // this is the id of the submit button
+        $("#submitButtonId").click(function() {
+
+            var url = "path/to/your/script.php"; // the script where you handle the form input.
+
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: $("#idForm").serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    alert(data); // show response from the php script.
+                }
+            });
+
+            return false; // avoid to execute the actual submit of the form.
+            });
+		
+	</script>
+
+</body>
+</html>

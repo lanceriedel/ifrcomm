@@ -1,0 +1,28 @@
+brokerhostport: hivedev8.labs.lan:9080
+#brokerhostport: localhost:9080
+
+kvhostport: hivedev5.labs.lan:8585
+
+http:
+
+  # The port on which the HTTP server listens for service requests.
+  # Because Java cannot drop privileges in a POSIX system, these
+  # ports cannot be in the range 1-1024. A port value of 0 will
+  # make the OS use an arbitrary unused port.
+  port: 8787
+
+  # The port on which the HTTP server listens for administrative
+  # requests. Subject to the same limitations as "port". If this is
+  # set to the same value as port, the admin routes will be mounted
+  # under /admin.
+  adminPort: 8788
+
+  # The minimum number of threads to keep running to process
+  # incoming HTTP requests.
+  minThreads: 8
+
+  # The maximum number of threads to keep running to process
+  # incoming HTTP requests.
+  maxThreads: 1024
+
+  connectorType: blocking

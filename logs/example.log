@@ -1,0 +1,485 @@
+WARN  [2014-05-04 04:41:34,744] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:41:34,816] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:41:34,819] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:41:34,924] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:41:34,977] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:41:34,977] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:41:35,249] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:41:35,250] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+WARN  [2014-05-04 04:42:10,706] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:42:10,766] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:42:10,768] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:42:10,851] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:42:10,899] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:42:10,900] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:42:11,123] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:42:11,125] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+ERROR [2014-05-04 04:42:27,237] freemarker.runtime: Template processing error: "Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl."
+! freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) [freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) [dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) [dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) [dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) [jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) [jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+WARN  [2014-05-04 04:42:27,247] org.eclipse.jetty.servlet.ServletHandler: 
+! javax.servlet.ServletException: com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:423) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: ! com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:58) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) ~[dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-servlet-1.17.1.jar:1.17.1]
+!... 30 common frames omitted
+Caused by: ! freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) ~[freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) ~[dropwizard-views-0.6.2.jar:na]
+!... 37 common frames omitted
+WARN  [2014-05-04 04:42:27,248] org.eclipse.jetty.servlet.ServletHandler: /searchexperiment/search
+! com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:58) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) ~[dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: ! freemarker.core.InvalidReferenceException: Expression result is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) ~[freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) ~[dropwizard-views-0.6.2.jar:na]
+!... 37 common frames omitted
+WARN  [2014-05-04 04:43:07,948] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:43:08,004] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:43:08,005] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:43:08,081] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:43:08,125] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:43:08,125] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:43:08,352] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:43:08,353] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+ERROR [2014-05-04 04:43:11,795] freemarker.runtime: Template processing error: "Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl."
+! freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) [freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) [freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) [dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) [dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) [dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) [jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) [jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) [jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+WARN  [2014-05-04 04:43:11,803] org.eclipse.jetty.servlet.ServletHandler: 
+! javax.servlet.ServletException: com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:423) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: ! com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:58) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) ~[dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-servlet-1.17.1.jar:1.17.1]
+!... 30 common frames omitted
+Caused by: ! freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) ~[freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) ~[dropwizard-views-0.6.2.jar:na]
+!... 37 common frames omitted
+WARN  [2014-05-04 04:43:11,804] org.eclipse.jetty.servlet.ServletHandler: /searchexperiment/search
+! com.sun.jersey.api.container.ContainerException: freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:58) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:74) ~[dropwizard-views-0.6.2.jar:na]
+! at com.yammer.dropwizard.views.ViewMessageBodyWriter.writeTo(ViewMessageBodyWriter.java:22) ~[dropwizard-views-0.6.2.jar:na]
+! at com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) [jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) [metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) [dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) [jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: ! freemarker.core.InvalidReferenceException: Expression comm is undefined on line 25, column 19 in com/hivedata/mobileappserver/webapp/view/experimentSearchView.ftl.
+! at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:125) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:135) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Dot._getAsTemplateModel(Dot.java:78) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getAsTemplateModel(Expression.java:89) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Expression.getStringValue(Expression.java:93) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.MixedContent.accept(MixedContent.java:92) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.visit(Environment.java:221) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.core.Environment.process(Environment.java:199) ~[freemarker-2.3.19.jar:2.3.19]
+! at freemarker.template.Template.process(Template.java:259) ~[freemarker-2.3.19.jar:2.3.19]
+! at com.yammer.dropwizard.views.freemarker.FreemarkerViewRenderer.render(FreemarkerViewRenderer.java:56) ~[dropwizard-views-0.6.2.jar:na]
+!... 37 common frames omitted
+WARN  [2014-05-04 04:44:05,995] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:44:06,049] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:44:06,051] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:44:06,130] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:44:06,175] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:44:06,175] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:44:06,410] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:44:06,411] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+WARN  [2014-05-04 04:45:48,245] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:45:48,304] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:45:48,305] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:45:48,378] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:45:48,422] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:45:48,422] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:45:48,668] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:45:48,669] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+WARN  [2014-05-04 04:56:00,737] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:56:00,791] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:56:00,792] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:56:00,876] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:56:00,920] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:56:00,921] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:56:01,144] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:56:01,146] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
+WARN  [2014-05-04 04:56:25,985] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2014-05-04 04:56:26,039] com.yammer.dropwizard.cli.ServerCommand: Starting hello-world
+INFO  [2014-05-04 04:56:26,041] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2014-05-04 04:56:26,117] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2014-05-04 04:56:26,158] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /searchexperiment/search (com.hivedata.mobileappserver.webapp.resources.TemplatedExperimentSearchResource)
+
+INFO  [2014-05-04 04:56:26,158] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2014-05-04 04:56:26,389] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8787
+INFO  [2014-05-04 04:56:26,391] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8788
